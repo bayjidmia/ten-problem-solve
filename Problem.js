@@ -23,4 +23,42 @@ function isPalindrome(str) {
 
   return str === reversed;
 }
-console.log(isPalindrome("racecar"));
+
+// problem 4
+function findLargestNumber(arr) {
+  let largest = arr[0];
+
+  for (let num of arr) {
+    if (num > largest) {
+      largest = num;
+    }
+  }
+
+  return largest;
+}
+
+// problem 5
+
+function removeDuplicates(arr) {
+  let uniqueArr = [];
+
+  for (let num of arr) {
+    if (!uniqueArr.includes(num)) {
+      uniqueArr.push(num);
+    }
+  }
+
+  return uniqueArr;
+}
+
+// problem 6
+
+function sumArray(arr) {
+  let sum = 0;
+
+  for (let num of arr) {
+    sum += num;
+  }
+
+  return sum;
+}
