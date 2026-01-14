@@ -62,3 +62,76 @@ function sumArray(arr) {
 
   return sum;
 }
+// problem 7
+function getEvenNumbers(arr) {
+  let evenNumbers = [];
+
+  for (let num of arr) {
+    if (num % 2 === 0) {
+      evenNumbers.push(num);
+    }
+  }
+
+  return evenNumbers;
+}
+// problem 8
+function capitalizeWords(str) {
+  return str
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
+// problem 9
+function factorial(n) {
+  let result = 1;
+
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+
+  return result;
+}
+// problem 10
+function printPingPong() {
+  const result = [];
+
+  for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      result.push("PingPong");
+    } else if (i % 3 === 0) {
+      result.push("Ping");
+    } else if (i % 5 === 0) {
+      result.push("Pong");
+    } else {
+      result.push(i);
+    }
+  }
+
+  return result;
+}
+
+console.log(
+  printPingPong(
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  )
+);
